@@ -5,24 +5,26 @@ set -euo pipefail
 # User settings
 # -----------------------------------------------------------------------------
 
-PYTHON_SCRIPT="/scratch/htc/lmehl/master_thesis/instances_scripts/create_scenario_catalogue_instances/multiply_demands.py"
-#OUTPUT_DIR="/scratch/opt/lmehl/instances/scenario_catalogue/"
-OUTPUT_DIR="/scratch/opt/lmehl/instances/scenario_catalogue/debug"
+PYTHON_SCRIPT="/scratch/htc/lmehl/master_thesis/instances_scripts/create_scenario_instances/multiply_demands.py"
+OUTPUT_DIR="/scratch/opt/lmehl/instances/scenario_catalogue/"
+#OUTPUT_DIR="/scratch/opt/lmehl/instances/scenario_catalogue/debug"
 
 # Plain .lp, .lp.gz, and single-file .zip inputs are supported.
 INSTANCES=(
-    #"/scratch/opt/lmehl/instances/base/2050-100-el_eff-3costmods-1e9boundsremoved-investvarsmerged.lp"
-    #"/scratch/opt/lmehl/instances/base/2050-100-el_eff-nothingmodified.lp"
-    "/scratch/opt/lmehl/instances/debug_instances/oemofB3_debug_3costmods_boundsremoved_investvarsmerged.lp"
+    "/scratch/opt/lmehl/instances/base/2050-100-el_eff-3costmods-1e9boundsremoved-investvarsmerged.lp.gz"
+    "/scratch/opt/lmehl/instances/base/2050-100-el_eff-nothingmodified.lp.gz"
+    #"/scratch/opt/lmehl/instances/debug_instances/oemofB3_debug_3costmods_boundsremoved_investvarsmerged.lp"
 )
 
 # One global demand multiplier is applied per run.
 FACTORS=(
-    "1.01"
-    "1.02"
-    "1.03"
-    "1.04"
-    "1.05"
+    "1.06"
+    "1.07"
+    "1.08"
+    "1.09"
+    "1.1"
+    "1.15"
+    "1.2"
 )
 
 # -----------------------------------------------------------------------------
